@@ -2,3 +2,42 @@
     padding: 0;
     margin: 0;
 }
+
+picture {
+    position: relative;
+}
+
+picture .mapaI {
+    z-index: 1;
+    position: absolute;
+    left: 350px;
+    top: 0;
+}
+
+picture .mapaII {
+    z-index: 2;
+    position: absolute;
+    left: 700px;
+    top: -200px;
+}
+
+picture .mapaIII {
+    z-index: 3;
+    position: absolute;
+    left: 232px;
+    top: -62px;
+}
+
+picture .mapaIV {
+    z-index: 4;
+    position: absolute;
+    left: 94px;
+    top: -3px;
+}
+
+picture .mapaV {
+    z-index: 5;
+    position: absolute;
+    left: 110px;
+    top: 311px;
+}
