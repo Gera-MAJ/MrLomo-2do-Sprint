@@ -3,15 +3,12 @@
     margin: 0;
 }
 
-picture {
-    position: relative;
-    display: none;
-}
+
 
 .conteiner {
     display: grid;
     grid-template-areas: 'superior superior'
-                         'centro centro'
+                         'mapa centro'
                          'final final';
     gap: 10px;
     grid-template-columns: 50% auto;
@@ -21,6 +18,11 @@ picture {
 .superior {
     grid-area: superior;
     border: 2px solid black;
+}
+
+.mapa-container {
+    grid-area: mapa;
+    position: relative;
 }
 
 .centro {
@@ -34,7 +36,7 @@ picture {
 }
 
 picture .mapaI {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     left: 350px;
     top: 0;
@@ -48,21 +50,21 @@ picture .mapaII {
 }
 
 picture .mapaIII {
-    z-index: 3;
+    z-index: 2;
     position: absolute;
     left: 232px;
     top: -62px;
 }
 
 picture .mapaIV {
-    z-index: 4;
+    z-index: 2;
     position: absolute;
     left: 94px;
     top: -3px;
 }
 
 picture .mapaV {
-    z-index: 5;
+    z-index: 2;
     position: absolute;
     left: 110px;
     top: 311px;
