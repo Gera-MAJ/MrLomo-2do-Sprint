@@ -5,6 +5,32 @@
 
 picture {
     position: relative;
+    display: none;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-areas: 'superior superior'
+                         'centro centro'
+                         'final final';
+    gap: 10px;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 20% 70% 10%;                     
+}
+
+.superior {
+    grid-area: superior;
+    border: 2px solid black;
+}
+
+.centro {
+    grid-area: centro;
+    border: 2px solid red;
+}
+
+.final {
+    grid-area: final;
+    border: 2px solid blue;
 }
 
 picture .mapaI {
